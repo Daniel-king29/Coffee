@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+
+#secdiv {
+    background-color:orangered; 
+    padding: 10px; 
+}
+#secdiv:hover{
+    background-color: white;
+}
+
+#secdiv:hover .btt{
+    opacity: 1;
+}
+
+.btt{
+    opacity: 0;
+}
+
+#thidiv:hover{
+    background: white;
+    .btt{
+    display: block;
+}
+}
+
+#foudiv:hover{
+    background: rgb(12, 12, 12)
+}
+
+#home{
+    text-decoration: none;
+    color: white;
+}
+
+#home:hover{
+color: tomato;
+}
+
+
+img{
+    background-repeat: no-repeat;
+}
+.igm{
+    position: fixed;
+}
