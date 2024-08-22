@@ -1,20 +1,22 @@
 let slideindex = 1;
 
 const slide = document.querySelectorAll('.slide')
+const slid = document.querySelectorAll('.slid')
 
 const totalslides= slide.length
 
-console.log(totalslides)
+// console.log(totalslides)
 
 const showslide = (index) => {
     slide.forEach((slide, i) => {
         slide.classList.toggle('active', i === index)
     });
     document.querySelector('.slides').style.transform = `translateX(-${index * 100}%)`;
+    document.querySelector('.slidess').style.transform = `translateX(-${index * 100}%)`;
 };
 
-console.log(slideindex = (slideindex + 1) %totalslides);
-showslide(slideindex)
+// console.log(slideindex = (slideindex + 1) %totalslides);
+// showslide(slideindex)
 
 
 
@@ -32,4 +34,4 @@ const prevslide = () =>{
 document.querySelector('.next').addEventListener('click', nextslide)
 document.querySelector('.prev').addEventListener('click', prevslide)
 
-setInterval(nextslide, 2000);//after every 4 seconds //
+setInterval(nextslide, 1000);//after every 4 seconds //

@@ -52,9 +52,8 @@ padding-top: 20px;
     box-sizing: border-box;
 } */
 
-.home{
-    text-decoration: none;
-    color: white;
+#home:hover{
+    color: red;
 }
 .center{
     text-decoration: none;
@@ -90,12 +89,15 @@ padding-top: 20px;
     color: white;
 }
 .dev{
+
     text-decoration: none;
     color: white;
 }
-dzd{
+
+.dzd{
     display: flex;
     height: 500px;
+    width: 526px;
 }
 
 iframe{
@@ -109,4 +111,13 @@ iframe{
     text-align: center;
     background-size: contain;
     height: 500px;
+}
+
+#home{
+    text-decoration: none;
+    color: white;
+}
+
+#hom:hover{
+    color: red;
 }

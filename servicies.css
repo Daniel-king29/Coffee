@@ -48,3 +48,54 @@ img{
 .igm{
     position: fixed;
 }
+
+.card {
+    position: relative;
+    height: 230px;
+    width: 300px;
+    padding: 20px;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: tomato;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    justify-content: space-between;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(20px);
+    background-color: white;
+    color: black;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-content {
+    margin-top: 15px;
+}
+
+.card-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color:black;
+    font-size:small;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card:hover .card-btn {
+    opacity: 1;
+}

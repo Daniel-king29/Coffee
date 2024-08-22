@@ -1,6 +1,6 @@
 *{
     margin: 0;
-     padding: 0; 
+    padding: 0; 
     box-sizing: border-box;
 }
 
@@ -16,6 +16,12 @@ nav{
     color: white;
     list-style: none;
 }
+.home-main {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
 
 #Gallery img{
     height: 300px;
@@ -45,13 +51,6 @@ nav{
     background-color: white;
 }
 
-#secdiv {
-    background-color:orangered; 
-    padding: 10px; 
-}
-#secdiv:hover{
-    background-color: white;
-}
 
 .dan{
     padding-left: 50px;
@@ -154,7 +153,7 @@ button:hover{
     overflow: hidden;
     border-radius: 10px;
     padding: 20px;
-    height: 80px;
+    height: 400px;
 }
 
 .slides{
@@ -163,7 +162,7 @@ button:hover{
 }
 
 .slide{
-    min-width: 100%;
+    flex-direction: column;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -194,4 +193,163 @@ button:hover{
 }
 .vvrv{
     display: flex;
+}
+
+#home:hover{
+    color: red;
+}
+
+.dan{
+    padding-left: 50px;
+    display: flex;
+    width: 500px;
+    margin-left: 150px;
+}
+
+.ttrey{
+    font-size: large;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    padding-right: 350px;
+    /* padding-left: 50px; */
+    display: flex;
+    width: 500px;
+    margin-left: 150px;
+    padding-top: 20px;
+}
+
+.caro{
+    position: relative;
+    /* width: 100%;  */
+    /* background-color: gold; */
+    max-width: 100%;
+    overflow: hidden;
+    /* border-radius: 10px; */
+    /* padding: 20px; */
+    /* box-shadow: 0 4px 8px rgb(157, 157, 241); */
+    height: 800px;
+}
+
+.slides{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    padding-top: 50px;
+}
+
+.slidess{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    padding-top: 50px;
+}
+
+.slide{
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slid{
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.prev, .next{
+    position: absolute;
+    top: 480px;
+    transform: translateY(-50%);
+    background-color: white;
+    color: rgb(133, 125, 125);
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 0px;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.prev{
+    left: 580px;
+    
+}
+
+.next{
+    right: 530px;
+}
+
+.prev:hover,.next:hover{ 
+    background-color: red;
+}
+
+.card {
+    position: relative;
+    height: 230px;
+    width: 300px;
+    padding: 20px;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: tomato;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    justify-content: space-between;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(20px);
+    background-color: white;
+    color: black;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-content {
+    margin-top: 15px;
+}
+
+.card-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color:black;
+    font-size:small;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card:hover .card-btn {
+    opacity: 1;
+}
+
+.dzd{
+    display: flex;
+    height: 500px;
+    width: 526px;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+iframe{
+    width: 700px;
+    height: 500px;
+}
+
+.cde{
+    background-image: url('images/img-9.png'); 
+    background-repeat: no-repeat; 
+    text-align: center;
+    background-size: contain;
+    height: 500px;
 }

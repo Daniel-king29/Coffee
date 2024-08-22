@@ -34,11 +34,6 @@ footer{
     grid-gap: 20px;
 }
 
-.hi{
-    text-decoration: none;
-    color: white;
-    list-style: none;
-}
 
 /* .hii{
     list-style: none;
@@ -47,6 +42,15 @@ footer{
 } */
 
 #home:hover{
-   color: red;
-   background-color: brown;
+    color: red;
+}
+
+#home{
+    text-decoration: none;
+    color: white;
+}
+
+.dzd{
+    display: flex;
+    height: 500px;
 }
